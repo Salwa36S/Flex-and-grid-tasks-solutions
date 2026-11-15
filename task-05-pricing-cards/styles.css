@@ -1,1 +1,73 @@
 /* TODO: build .pricing-row and .pricing-card with Flexbox to match the mockup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 40px 24px;
+  background: #f7f7f8;
+  color: #1a1a1a;
+  font-family: system-ui, sans-serif;
+}
+
+.pricing-row {
+  display: flex;
+  flex-wrap: wrap;      
+  justify-content: center;
+  align-items: center;      
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.pricing-card {
+  flex: 1 1 260px;           
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;    
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+.pricing-card.featured {
+  flex-grow: 1.2;
+  max-width: 360px; 
+  border: 2px solid #2563eb;
+}
+.pricing-card h2 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.price {
+  margin-bottom: 16px;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.pricing-card ul {
+  list-style: none;
+  margin-bottom: 24px;
+  color: #4b5563;
+}
+
+.pricing-card li {
+  padding: 6px 0;
+}
+
+.pricing-card button {
+  margin-top: auto;           
+  padding: 10px 16px;
+  background: #ffffff;
+  color: #1a1a1a;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.featured button {
+  background: #2563eb;      
+  color: #ffffff;
+  border-color: #2563eb;
+}
