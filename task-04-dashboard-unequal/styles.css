@@ -1,1 +1,68 @@
-/* TODO: build .dashboard with CSS Grid and grid-template-areas to match the mockup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 24px;
+  background-color: #f7f7f8;
+  color: #1a1a1a;
+  font-family: system-ui, sans-serif;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-areas:
+    "chart tile1 tile2"
+    "chart tile3 tile4";
+  gap: 16px;
+}
+
+.chart-panel { grid-area: chart; }
+.stat-tile:nth-child(2) {
+     grid-area: tile1; 
+ }
+.stat-tile:nth-child(3) { 
+    grid-area: tile2;
+ }
+.stat-tile:nth-child(4) { 
+    grid-area: tile3; 
+}
+.stat-tile:nth-child(5) { 
+    grid-area: tile4; 
+}
+
+.chart-panel,
+.stat-tile {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.chart-panel h2 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #1a1a1a;
+}
+
+.img-placeholder {
+  height: 164px;
+  border-radius: 8px;
+  background:#B1D4FE;
+}
+
+.stat-tile h3 {
+  margin-bottom: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+}
