@@ -1,1 +1,41 @@
 /* TODO: build .site-header and .nav with Flexbox to match the mockup */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f7f7f8;
+    color:#1a1a1a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.site-header{
+    background-color:#ffffff;
+    display: flex;
+    padding: 16px 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px dolid #d1d5db;
+}
+.logo{
+text-decoration: none;
+color: #111827;
+font-weight: 700;
+font-size: 20px;
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+   
+}
+.nav a{
+    text-decoration: none;
+    color:#1a1a1a;;
+
+}
+.nav a:hover{
+    text-decoration: underline;
+    color: #111827;
+}
