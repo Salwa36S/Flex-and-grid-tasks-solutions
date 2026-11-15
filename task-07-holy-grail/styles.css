@@ -1,1 +1,117 @@
 /* TODO: build .page-layout to match the mockup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f3f4f6;
+  color: #1a1a1a;
+  font-family: system-ui, sans-serif;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: 237px 1fr 237px;
+  grid-template-rows: 67px 1fr 66px;
+
+  grid-template-areas:
+    "header header header"
+    "nav content aside"
+    "footer footer footer";
+
+  min-height: 100vh;
+}
+
+.site-header {
+  grid-area: header;
+}
+
+.side-nav {
+  grid-area: nav;
+}
+
+.content {
+  grid-area: content;
+}
+
+.sidebar {
+  grid-area: aside;
+}
+
+.site-footer {
+  grid-area: footer;
+}
+
+.site-header,
+.site-footer {
+  background: #111827;
+  color: #ffffff;
+}
+
+.side-nav,
+.sidebar {
+  background: #f3f4f6;
+}
+
+.content {
+  background: #ffffff;
+}
+
+.site-header,
+.site-footer,
+.content,
+.side-nav,
+.sidebar {
+  padding: 16px 21px;
+}
+
+.site-header {
+  padding: 16px 42px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.side-nav a {
+  color: #374151;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.side-nav a:hover {
+  color: #111827;
+}
+
+.content {
+  padding: 40px 42px;
+}
+
+.content h1 {
+  margin-bottom: 26px;
+  font-size: 42px;
+  color: #1a1a1a;
+}
+
+.content p {
+  font-size: 20px;
+  color: #1a1a1a;
+}
+
+.sidebar {
+  color: #6b7280;
+  font-size: 18px;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9ca3af;
+}
